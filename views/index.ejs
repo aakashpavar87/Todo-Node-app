@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList v1</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box flex-col">
+            <div class="heading flex-col">
+                <h3> <%= todoTitle %> </h3>
+            </div>
+            <div class="todoContainer">
+                <% todos.forEach(todo=>{ %>
+                    <form action="/delete" method="post">
+                        <div class="flex">
+                            <input type="checkbox" onchange="this.form.submit()" name="checkBox" value="<%= todo._id %>" id="check">
+                            <p class="todo"> <%= todo.task %> </p>
+                        </div>
+                        <input type="hidden" name="listname" value="<%= todoTitle %>">
+                    </form>
+            <% }) %>
+            </div>
+            <form action="/" method="post">
+                <div class="input-list flex-col">
+                    <input type="text" name="todo" placeholder="New Item" id="todo">
+                    <button name="list" value="<%= todoTitle %>" class="btn rounded">+</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+    

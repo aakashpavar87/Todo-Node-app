@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: linear-gradient(65deg, purple, white);
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.heading{
+    margin: 3vh 0;
+    width: 100%;
+    height: 10vh;
+    padding: 0 45%;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+}
+
+
+.flex-col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    min-height: 40vh;
+    width: 30vw;
+    border-radius: 5px;
+    flex-direction: column;
+    background: rgba(235, 228, 228, 0.769);
+
+}
+
+label{
+    font-weight: 900;
+}
+
+.btn{
+    padding: 8px 13px;
+    background: royalblue;
+    color: white;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+.lists{
+    width: 80%;
+}
+
+.todo{
+    margin: 0 4px;
+    padding: 5px;
+}
+
+.input-list{
+    padding: 10px;
+    width: 100%;
+}
+
+form{
+    padding: 10px;
+    width: 70%;
+}
+
+.input-list input{
+    padding: 5px;
+    width: 80%;
+    border: none;
+    outline: none;
+    background: rgba(235, 228, 228, 0.769);
+    border-bottom: 1px solid black;
+}
+
+.todoContainer{
+    width: 70%;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex input{
+    margin-right: 10px;
+}
+
+.space{
+    justify-content: space-around;
+}
